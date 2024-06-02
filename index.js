@@ -73,6 +73,7 @@ GAME: while (running) {
     console.log(`\t# You have ${playerMaxHealth}Hp health left. `);
     if (Math.floor(Math.random() * 100) < healthPotionDropAmount) {
         console.log(`\t# The ${enemy} drop the health potion! `);
+        numHealthPotions++;
         console.log(`\t# Now you have ${numHealthPotions} number of health potions`);
     }
     console.log("-------------------------------------------");
